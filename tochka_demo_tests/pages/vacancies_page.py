@@ -36,8 +36,7 @@ class VacanciesPage:
         browser.open('/hr/vacancies/')
 
     def select_specialization(self, value):
-        (browser.all('.mb-3').element_by(have.text(Filter.specialization.value)).all('.tab_tabButton___PexF')
-         .element_by(have.text(value)).click())
+        browser.all('.tab_tabButton___PexF').element_by(have.text(value)).click()
 
     def select_experience(self, value):
         (browser.all('.mb-3').element_by(have.text(Filter.experience.value)).all('.tab_tabButton___PexF')
