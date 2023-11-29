@@ -48,7 +48,7 @@ class VacanciesPage:
          .element_by(have.text(value)).click())
 
     def set_salary(self, value):
-        browser.element('#salary_textInput').type(Keys.COMMAND + 'a' + Keys.NULL).type(value)
+        browser.element('#salary_textInput').type(Keys.CONTROL + 'a' + Keys.NULL).type(value)
 
     def assert_all_results_have_specialization(self, value):
         for element in browser.all('[class*="jobs_jobsListItem_"]').should(have.no.size(0)):
