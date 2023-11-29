@@ -2,7 +2,6 @@ import allure
 
 from tochka_demo_tests.pages.vacancies_page import VacanciesPage
 from tochka_demo_tests.pages.vacancies_page import Specialization
-from tochka_demo_tests.pages.vacancies_page import Type
 from tochka_demo_tests.pages.vacancy_page import VacancyPage
 
 vacancies = VacanciesPage()
@@ -17,6 +16,8 @@ def test_click_on_vacancy_card_should_open_vacancy_page():
     with allure.step("Open vacancies page"):
         vacancies.open()
 
+    with allure.step("Apply filter"):
+        vacancies.select_experience(Specialization.it.value)
     with allure.step("Click vacancy card"):
         vacancies.open_vacancy(vacancy_name)
 
