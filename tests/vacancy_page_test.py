@@ -17,7 +17,7 @@ def test_click_on_vacancy_card_should_open_vacancy_page():
         vacancies.open()
 
     with allure.step("Apply filter"):
-        vacancies.select_experience(Specialization.it.value)
+        vacancies.select_specialization(Specialization.it.value)
     with allure.step("Click vacancy card"):
         vacancies.open_vacancy(vacancy_name)
 
