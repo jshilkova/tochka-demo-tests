@@ -20,9 +20,9 @@ def get_all_vacancies():
 def test_filter_by_specialization():
     vacancies.open()
 
-    vacancies.select_specialization(Specialization.it.value)
+    vacancies.select_specialization(Specialization.marketing.value)
 
-    vacancies.assert_all_results_have_specialization(Specialization.it.value)
+    vacancies.assert_all_results_have_specialization(Specialization.marketing.value)
 
 
 def test_switch_filter_by_specialization():
@@ -61,7 +61,7 @@ def test_experience_filter_reset(get_all_vacancies):
 
     assert vacancies.get_result_urls() == get_all_vacancies
 
-def test_experience_type_reset(get_all_vacancies):
+def test_type_filter_reset(get_all_vacancies):
     vacancies.open()
 
     vacancies.select_type(Type.hybrid.value)
