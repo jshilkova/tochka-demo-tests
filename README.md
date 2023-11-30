@@ -27,32 +27,9 @@
 
 ### Технологии:
 
-<table border="2">
-  <tbody>
-    <tr>
-        <td>Python</td>
-        <td>Pytest</td>
-        <td>Selene</td>
-        <td>Selenium</td>
-        <td>Selenoid</td>
-        <td>Jenkins</td>
-        <td>Allure Reports</td>
-        <td>Allure TestOps</td>
-        <td>Telegram</td>
-    </tr>
-    <tr>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/python.svg" width="50"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/pytest.png" width="50"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/selene.png" width="55"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/selenium.png" width="50"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/jenkins.png" width="50"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/selenoid.png" width="50"></td>
-        <td><div style="text-align:center"><img src="resources/icons/allure_report.png" width="50"></div></td>
-        <td><p align="center"><img src="resources/icons/allure_testops.png" width="50"></p></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/telegram.png" width="50"></td>
-    </tr>
-  </tbody>
-</table>
+| Python | Pytest | Selene | Selenium | Selenoid | Jenkins | Allure Reports | Allure TestOps | Telegram |
+|--------|--------|--------|----------|----------|---------|-----------------|----------------|----------|
+| <p align="center"><img src="resources/icons/python.svg" alt="Python" width="50"/></p> | <p align="center"><img src="resources/icons/pytest.png" alt="Pytest" width="50"/></p> | <p align="center"><img src="resources/icons/selene.png" alt="Selene" width="55"/></p> | <p align="center"><img src="resources/icons/selenium.png" alt="Selenium" width="50"/></p> | <p align="center"><img src="resources/icons/jenkins.png" alt="Jenkins" width="50"/></p> | <p align="center"><img src="resources/icons/selenoid.png" alt="Selenoid" width="50"/></p> | <p align="center"><img src="resources/icons/allure_report.png" alt="Allure Reports" width="50"/></p> | <p align="center"><img src="resources/icons/allure_testops.png" alt="Allure TestOps" width="50"/></p> | <p align="center"><img src="resources/icons/telegram.png" alt="Telegram" width="50"/></p> |
 
 ---
 
