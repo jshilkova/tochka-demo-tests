@@ -41,15 +41,15 @@
         <td>Telegram</td>
     </tr>
     <tr>
-        <td><img src="resources/icons/python.svg" width="50"></td>
-        <td><img src="resources/icons/pytest.png" width="50"></td>
-        <td><img src="resources/icons/selene.png" width="55"></td>
-        <td><img src="resources/icons/selenium.png" width="50"></td>
-        <td><img src="resources/icons/jenkins.png" width="50"></td>
-        <td><img src="resources/icons/selenoid.png" width="50"></td>
-        <td><img src="resources/icons/allure_report.png" width="50"></td>
-        <td><img src="resources/icons/allure_testops.png" width="50"></td>
-        <td><img src="resources/icons/telegram.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/python.svg" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/pytest.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/selene.png" width="55"></td>
+        <td style="text-align: center;"><img src="resources/icons/selenium.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/jenkins.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/selenoid.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/allure_report.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/allure_testops.png" width="50"></td>
+        <td style="text-align: center;"><img src="resources/icons/telegram.png" width="50"></td>
     </tr>
   </tbody>
 </table>
