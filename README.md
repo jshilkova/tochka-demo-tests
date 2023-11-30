@@ -1,18 +1,22 @@
-<h1 align="center">Проект тестирования сайта банка Точка</h1>
+# Проект тестирования сайта банка Точка</h1>
 
----
+Проект демонстрирует организацию с нуля удобной инфраструктуры для внедрения автоматизации. 
+С помощью Pytest и Selene реализована основа для добавления новых тестов, запуск тестов происходит в Jenkins,
+отчёты о прохождении загружаются в Allure TestOpts, 
+в Telegram приходят нотификации с результатами прогона.
 
-Тестирую форму поиска [открытых вакансий](https://tochka.com/hr/vacancies/)
+Тестами покрыта форма поиска [открытых вакансий.](https://tochka.com/hr/vacancies/) 
+Набор тестов не является полным, но тем не менее он разумный)
 
 ![vacancies_page](resources/images/vacancies_page.png)
 
 ---
 
-### Автотестами проверила:
+### Автотестами проверяется:
 
 * [X]  Применение, изменение и сброс фильтра про направлению работы
-* [X]  Применение и сброс фильра по опыту работы
-* [X]  Что фильтр про городу скрывается при выборе удаленного формата работы
+* [X]  Применение и сброс фильтра по опыту работы
+* [X]  Скрытие фильтра про городу при выборе удаленного формата работы
 * [X]  Сброс фильтра по формату работы
 * [X]  Применение фильтра про зарплате
 * [X]  Применение комбинации из трех фильтров с нужной вакансией в результате
@@ -36,18 +40,19 @@
         <td>Allure TestOps</td>
         <td>Telegram</td>
     </tr>
+    <tr>
+        <td><img src="resources/icons/python.svg" width="50"></td>
+        <td><img src="resources/icons/pytest.png" width="50"></td>
+        <td><img src="resources/icons/selene.png" width="55"></td>
+        <td><img src="resources/icons/selenium.png" width="50"></td>
+        <td><img src="resources/icons/jenkins.png" width="50"></td>
+        <td><img src="resources/icons/selenoid.png" width="50"></td>
+        <td><img src="resources/icons/allure_report.png" width="50"></td>
+        <td><img src="resources/icons/allure_testops.png" width="50"></td>
+        <td><img src="resources/icons/telegram.png" width="50"></td>
+    </tr>
   </tbody>
 </table>
-
-<img src="resources/icons/python.svg" width="50">  
-<img src="resources/icons/pytest.png" width="50">  
-<img src="resources/icons/selene.png" width="55">
-<img src="resources/icons/selenium.png" width="50">
-<img src="resources/icons/jenkins.png" width="50">
-<img src="resources/icons/selenoid.png" width="50">
-<img src="resources/icons/allure_report.png" width="50">
-<img src="resources/icons/allure_testops.png" width="50">
-<img src="resources/icons/telegram.png" width="50">
 
 ---
 
@@ -56,7 +61,7 @@
 #### Параметры сборки
 
 * `environment` - окружение для запуска тестов
-* `comment` - комментарий
+* `comment` - комментарий к запуску, будет указан в нотификации в Telegram
 
 #### Чтобы запустить автотесты в Jenkins:
 
@@ -71,11 +76,11 @@
 
 #### Чтобы запустить локально:
 
-1. Задайте логин и пароль от учетной записи **selenoid.autotests.cloud** 
+1. Задать логин и пароль от учетной записи **selenoid.autotests.cloud** 
 в переменных окружения `LOGIN` и `PASSWORD`
-2. Импортируйте зависимости `pip install -r requirements.txt`
-3. Запустите тесты `pytest .`
-4. Сформируйте allure отчет `allure serve`
+2. Импортировать зависимости `pip install -r requirements.txt`
+3. Запустить тесты `pytest .`
+4. Сформировать allure отчет `allure serve`
 
 ### Allure отчёт
 
@@ -98,7 +103,7 @@
 Результаты прохождения тестов приходят в чат в Telegram: так ответственные могут быстро узнавать о проблемах. 
 В кратком отчете есть процент упавших тестов и ссылка на страницу с подробным allure отчетом.
 
-![telegram notification](resources/images/telegram_notification.png)
+<img src="resources/images/telegram_notification.png" width="400">
 
 ### Allure TestOps
 
