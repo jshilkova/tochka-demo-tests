@@ -47,8 +47,8 @@
         <td><img style="display: block; margin: 0 auto" src="resources/icons/selenium.png" width="50"></td>
         <td><img style="display: block; margin: 0 auto" src="resources/icons/jenkins.png" width="50"></td>
         <td><img style="display: block; margin: 0 auto" src="resources/icons/selenoid.png" width="50"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/allure_report.png" width="50"></td>
-        <td><img style="display: block; margin: 0 auto" src="resources/icons/allure_testops.png" width="50"></td>
+        <td><div style="text-align:center"><img src="resources/icons/allure_report.png" width="50"></div></td>
+        <td><p align="center"><img src="resources/icons/allure_testops.png" width="50"></p></td>
         <td><img style="display: block; margin: 0 auto" src="resources/icons/telegram.png" width="50"></td>
     </tr>
   </tbody>
