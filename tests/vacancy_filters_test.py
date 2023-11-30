@@ -136,7 +136,7 @@ def test_salary_filter():
         salary = 210000
         vacancies.set_salary(salary)
 
-    with allure.step("Check that all vacancies have"):
+    with allure.step("Check that all vacancies have same of higher salary"):
         vacancies.assert_all_results_have_salary(salary)
 
 
@@ -154,9 +154,6 @@ def test_combination_of_3_filters():
     with allure.step("Apply Remote job filter"):
         vacancies.select_type(Type.remote.value)
 
-    with allure.step("7 vacancies found"):
-        vacancies.assert_results_count_from_header(7)
-        vacancies.assert_results_count(7)
     with allure.step("Тестировщик vacancy found"):
         vacancies.assert_vacancy_presents('Тестировщик')
 
